@@ -1,4 +1,9 @@
 
+// Saluto
+
+alert("Ciao! Per calcolare il biglietto abbiamo bisogno di alcuni dati. Premi OK per proseguire.")
+
+
 // Chiedo all'utente le informazioni necessarie.
 var age = parseInt( prompt("Quanti anni hai?"));
 var km = parseInt(prompt("Quanti chilometri percorrerai?"));
@@ -7,7 +12,7 @@ console.log(km);
 
 // chilometri percorsi
 var ticketPrice = km * 0.21;
-console.log(ticketPrice);
+// console.log(ticketPrice);
 
 // sconto in base all'eta
 
@@ -15,9 +20,9 @@ var discountYoung = ticketPrice * 20 / 100;
 
 var discountOlder = ticketPrice * 40 / 100;
 
-console.log (discountYoung)
+// console.log (discountYoung)
 
-console.log(discountOlder);
+// console.log(discountOlder);
 
 
 // Elaborazione prezzo finale
@@ -36,14 +41,15 @@ else if (age >= 65) {
 
 }
 
-else ((age >= 18) || (age <= 64)) {
+else if ((age >= 18) || (age <= 64)) {
 
   finalPrice = ticketPrice - 0;
 }
 
-console.log(finalPrice);
+// console.log(finalPrice);
 
 
+// Prezzo su html
 
 document.getElementById('totalPrice').innerHTML = Math.ceil(finalPrice) + " euro";
 
