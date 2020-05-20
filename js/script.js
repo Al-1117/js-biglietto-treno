@@ -45,6 +45,10 @@ console.log(finalPrice);
 
 
 
+document.getElementById('totalPrice').innerHTML = Math.ceil(finalPrice) + " euro";
+
+
+
 
 
 
