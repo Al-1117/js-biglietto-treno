@@ -20,9 +20,9 @@ var discountYoung = ticketPrice * 20 / 100;
 
 var discountOlder = ticketPrice * 40 / 100;
 
-// console.log (discountYoung)
+console.log (discountYoung)
 
-// console.log(discountOlder);
+console.log(discountOlder);
 
 
 // Elaborazione prezzo finale
@@ -46,16 +46,21 @@ else if ((age >= 18) || (age <= 64)) {
   finalPrice = ticketPrice - 0;
 }
 
-// console.log(finalPrice);
+console.log(finalPrice);
 
 
 // Prezzo su html
 
+
+
 document.getElementById('totalPrice').innerHTML = Math.ceil(finalPrice) + " euro";
 
+// anno di nascita dell'utente
 
+var year = new Date();
 
+var current = year.getFullYear ();
 
+console.log(parseInt(current));
 
-
-// sconti
+document.getElementById('birth').innerHTML = parseInt(current) - parseInt(age);
