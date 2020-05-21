@@ -53,7 +53,7 @@ console.log(finalPrice);
 
 
 
-document.getElementById('totalPrice').innerHTML = Math.ceil(finalPrice) + " euro";
+document.getElementById('totalPrice').innerHTML = finalPrice.toFixed(2) + " euro";
 
 // anno di nascita dell'utente
 
